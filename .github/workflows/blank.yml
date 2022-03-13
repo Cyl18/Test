@@ -32,14 +32,22 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          sleep 15
+          set +e
+          unzip -q Minecraft-Mod-Language-Package-1.16.zip
+          unzip -q Minecraft-Mod-Language-Package-1.18.zip
+          unzip -q Minecraft-Mod-Language-Package-1.12.2.zip
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.0.0
         with:
     # Artifact name
-          name: README.md # optional, default is artifact
+          name: Minecraft-Mod-Language-Package-1.16.zip # optional, default is artifact
     # A file, directory or wildcard pattern that describes what to upload
-          path: README.md
+          path: Minecraft-Mod-Language-Package-1.16/*
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.0.0
+        with:
+    # Artifact name
+          name: Minecraft-Mod-Language-Package-1.18.zip # optional, default is artifact
+    # A file, directory or wildcard pattern that describes what to upload
+          path: Minecraft-Mod-Language-Package-1.18/*
     
