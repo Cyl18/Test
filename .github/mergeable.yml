@@ -1,0 +1,9 @@
+version: 2
+mergeable:
+  - when: pull_request.* # can be one or more
+    name: check name A
+    validate:
+      - do: label
+        must_exclude:
+          regex: 'test1|test2'
+    
