@@ -1,0 +1,23 @@
+<svg width="420" height="80" viewBox="0 0 420 80" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 36px;
+      font-weight: 600;
+      fill: #e6edf3;
+    }
+    .bot {
+      fill: #9da7b3;
+      font-weight: 500;
+    }
+  </style>
+
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#0d1117"/>
+
+  <!-- 标题 -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="title">
+    <tspan>CFPA</tspan>
+    <tspan dx="7" class="bot">Bot</tspan>
+  </text>
+</svg>
